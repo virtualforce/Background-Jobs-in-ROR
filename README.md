@@ -7,7 +7,7 @@ Rails provides lot of gems for background job processing but i am sharing these 
 1) [Delayed_job](https://github.com/collectiveidea/delayed_job)
 2) [Sidekiq](https://github.com/mperham/sidekiq)
 
-# Delayed_job:
+## Delayed_job:
 This is oldest gem that i initially used in some of the projects and it worked quite well. But there are following pros & cons in comparison to Sidekiq.
 
 Pros :
