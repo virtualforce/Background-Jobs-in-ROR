@@ -62,4 +62,7 @@ Some useful commands:
 
 RAILS_ENV=production bundle exec sidekiq -c 10 -q critical,8 -q default # this job create 10 threads
 
-[Admin panel snapshot]: https://github.com/mperham/sidekiq/raw/master/examples/web-ui.png
+Admin panel snapshot: 
+![alt text](https://github.com/mperham/sidekiq/raw/master/examples/web-ui.png)
+
+
