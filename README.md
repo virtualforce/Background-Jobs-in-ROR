@@ -5,6 +5,7 @@ Background jobs are used for executing tasks in which we don't need instant resp
 Rails provides lot of gems for background job processing but i am sharing these 2 according to my experience on moderate and huge traffic websites
 
 1- [Delayed_job](https://github.com/collectiveidea/delayed_job)
+
 2- [Sidekiq](https://github.com/mperham/sidekiq)
 
 ## Delayed_job:
