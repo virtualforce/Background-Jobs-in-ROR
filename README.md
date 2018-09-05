@@ -10,13 +10,13 @@ Rails provides lot of gems for background job processing but i am sharing these 
 ## Delayed_job:
 This is oldest gem that i initially used in some of the projects and it worked quite well. But there are following pros & cons in comparison to Sidekiq.
 
-Pros:
+### Pros:
 
 1- No extra tool required, by default uses main project db.
 
 2- Suitable for project with few jobs on daily basis.
 
-Cons: 
+### Cons: 
 
 1- By default use database as backend store and send lot of queries to main DB server in case of large no of jobs on daily basis.
 
@@ -24,7 +24,7 @@ Cons:
 
 3- Don't take advantage of multi-threading.
 
- Some useful commands:
+### Some useful commands:
 
  RAILS_ENV=production script/delayed_job -n 2 start # n represent no of worker process you want to start to process jobs.
 
@@ -34,7 +34,7 @@ Cons:
 
 This is very good gem and i have used it in many projects. This gem has following pros & cons of gems in comparsion to delayed_job
 
-Pros:
+### Pros:
 
  1- By default use Redis as backend store and you can offload lot of queries from your main db server in case of large no of jobs on daily basis. Redis is very fast as compared to RDBMS.
 
@@ -44,12 +44,12 @@ Pros:
 
  4- Good utilization of CPU by using multi-threading
 
- Cons: 
+ ### Cons: 
 
  1- Extra software(Redis) required.
  
 
-Some interesting addons for getting more control on job execution flow:
+### Some interesting addons for getting more control on job execution flow:
  
 1- [Sidekiq Priority](https://github.com/publitas/sidekiq-prioritized_queues)
 
@@ -58,11 +58,12 @@ Some interesting addons for getting more control on job execution flow:
 3- [Sidekiq Throttler](https://github.com/gevans/sidekiq-throttler)
 
 
-Some useful commands: 
+### Some useful commands: 
 
 RAILS_ENV=production bundle exec sidekiq -c 10 -q critical,8 -q default # this job create 10 threads
 
-Admin panel snapshot: 
+### Admin panel snapshot: 
+
 ![alt text](https://github.com/mperham/sidekiq/raw/master/examples/web-ui.png)
 
 
