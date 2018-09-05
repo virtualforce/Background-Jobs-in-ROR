@@ -1,4 +1,4 @@
-# Background-Jobs-in-ROR
+# Background Jobs in ROR
 
 Background jobs are used for executing tasks in which we don't need instant response. E.g Encoding video, generating sitemap, generating product listing feeds, image thumbnail generation etc
 
